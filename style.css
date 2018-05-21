@@ -1,0 +1,51 @@
+#menu-bar{
+    background-color: aqua;
+    height: 90px;
+    width: 100%;
+    display: flex;    
+}
+#menu-bar ul{
+display: flex;
+list-style: none;
+}
+#menu-bar ul li{
+    padding: 20px;
+    
+}
+li a{
+    text-decoration: none;
+}
+
+main.ng-enter{
+    transition: 1s linear all;
+    opacity:0;
+}
+main.ng-enter.ng-enter-active{
+    opacity: 1;
+}
+
+#list li.ng-enter{
+    transition: .2s linear all;
+    opacity: 0;
+    transform: translateY(70px);
+}
+#list li.ng-enter.ng-enter-active{
+    opacity: 1;
+    transform: translateY(0);
+}
+#list li.ng-leave{
+    transition: .2s linear all;
+    opacity: 1;
+    transform: translateX(0);
+}
+#list li.ng-leave.ng-leave-active{
+    opacity: 1;
+    transform: translateX(-100%);
+}
+#list li.ng-leave-stagger{
+    transition-delay: 0.2s;
+    transition-duration: 0;
+}
+input.ng-invalid.ng-touched,textarea.ng-invaild.ng-touched{
+    border: 2px solid red;
+}

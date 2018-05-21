@@ -1,0 +1,32 @@
+[
+    {
+      "name": "hema",
+      "age": 23,
+      "work": "boring",
+      "available": true
+    },
+    {
+      "name": "one",
+      "age": 45,
+      "work": "work",
+      "available": true
+    },
+    {
+      "name": "yaggi",
+      "age": 47,
+      "work": "interest",
+      "available": false
+    },
+    {
+      "name": "ganesan",
+      "age": 47,
+      "work": "house",
+      "available": false
+    },
+    {
+      "name": "three",
+      "age": 9,
+      "work": "horse",
+      "available": false
+    }
+  ]

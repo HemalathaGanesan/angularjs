@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<div class="content">
+    <!-- <div ng-init="numbers=[1,2,3,4]">
+        <h4>{{numbers[0]}}</h4>
+    </div>
+    <div ng-init="array=['hema','ganesan']">
+        <h1>{{array[0]+array[1]}}</h1>
+    </div>
+    
+    <input type="text" ng-model="favfood" placeholder="type your fav food"/>
+    <p>your fav food is {{favfood}}</p> -->
+
+    <!-- <div ng-controller="appController"> -->
+        <!-- <p>{{message}}</p> -->
+        <button ng-click="order='name' ">order by name</button>
+        <button ng-click="order='work' ">order by work</button>
+        <input type="text" ng-model="search" />
+        <ul id="list">
+            <!-- <li ng-repeat="arr in array">
+                {{arr}}
+            </li> -->
+            
+            <li ng-repeat="obj in object | orderBy:order | filter:search"  ng-show="!obj.available">
+               <h3>{{obj.name}}-{{obj.age |currency}}</h3>
+               <div class="remove" ng-click="removeobj(obj)">X</div>
+               <span>{{obj.work}} work</span>
+            </li>
+        </ul>
+        <form ng-submit="addObj()">
+            <input type="text" placeholder="name" ng-model="newobj.name" />
+            <input type="text" placeholder="age" ng-model="newobj.age" />
+            <input type="text" placeholder="work" ng-model="newobj.work" />
+            <input type="submit" value="Add new value"/>
+        </form>
+        <a href="" ng-click="removeAll()">remove all</a>
+        
+                 
+    </div>
+<!-- </div> -->

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <!-- <base href="/" > -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript">
+    angular.module("sample",[])
+    </script> -->
+    <script src="/app/modules.js"></script>
+    
+    <title>Document</title>
+</head>
+<body >
+   <header ng-include="'header.html'"></header>
+   <main ng-view></main>  
+    
+</body>
+</html>
